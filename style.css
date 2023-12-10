@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(76, 159, 171);
+    font-family: 'kumbh sans';
+}
+h1{
+    font-weight: 700;
+    font-size: 18px;
+}
+.wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    border-radius: 1em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 357px;
+    min-height: 22.5em;
+    height: fit-content;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    position: relative; /* Used to position avatar-card above spheres-background */
+}
+.spheres-background{
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 8em; /* About 33 percent of 22.5em - cards min height */
+}
+.content{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar{
+    width: 6em;
+    margin-top: 5em;
+    margin-bottom: 1em;
+    border-radius: 50%;
+    border: white 5px solid;
+}
+.name-age-wrapper{
+    display: flex;
+    gap: 0.6em;
+    margin-bottom: 0.7em;
+}
+.name{
+    word-spacing: 0.01em;
+}
+.age{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(135, 136, 139);
+}
+.city{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(135, 136, 139);
+}
+.info-wrapper{
+    min-height: 100%;
+    display: flex;
+    align-items:start;
+    justify-content: space-around;
+    padding: 1.5em;
+    margin-top: 1.5em;
+    border-top: rgb(175, 176, 180) solid 0.01px;
+    width: 100%;
+    
+}
+.info-wrapper p{
+    color: rgb(135, 136, 139);
+    letter-spacing: 0.2em;
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 0.5em;
+}
+.followers, .photos, .likes{
+    text-align: center;
+}
+.likes{
+    min-width: 62px
+}
+.followers{
+    min-width: 62px;
+}
+.photos{
+    min-width: 62px;
+}
